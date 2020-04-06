@@ -15,7 +15,7 @@ Target the body element and set some common styles for the page:
  - font size to 16px
 */
 body {
-  background-color: black;
+  background-color: gainsboro;
 }
 
 /*
@@ -96,7 +96,13 @@ target the element with the id of hero and set the following properties
  - background image to our hero image (travel_hero.jpg) in our assets/images directory
  - background image to be fixed // this will give the effect of the page scrolling over the hero image
 */
-
+#hero {
+  width: 100%;
+  height: 450px;
+  background-size: cover 'scale'; /*????*/
+  background-repeat: no-repeat;
+  background-image: 'travel_hero.jpg';
+}
 
 
 /*
