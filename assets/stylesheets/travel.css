@@ -16,6 +16,10 @@ Target the body element and set some common styles for the page:
 */
 body {
   background-color: gainsboro;
+  color: white;
+  font: helvetica;
+  size: 16px;
+
 }
 
 /*
@@ -82,7 +86,7 @@ target the elements with a class of card and set the following properties:
   background-color: white;
   text-align: center;
   color: black;
-  background-size: contain; /*  ???  */
+  background-size: contain; size: 50px;/*  ???  */
   background: no-repeat;
 }
 
@@ -101,7 +105,8 @@ target the element with the id of hero and set the following properties
   height: 450px;
   background-size: cover 'scale'; /*????*/
   background-repeat: no-repeat;
-  background-image: 'travel_hero.jpg';
+  background-image: url('../images/travel_hero.jpg';
+  background-image: url();
 }
 
 
@@ -109,6 +114,9 @@ target the element with the id of hero and set the following properties
 target the element with the class of card that also has an id of spain
  - set the background image to (spain_flag.svg) in our assets/images directory
 */
+.card #spain {
+  background-image: url(../images/spain_flag.svg);
+}
 
 
 /*
@@ -222,7 +230,9 @@ target the element with the class of card that also has an id of chile
 /*
  target the element with the id of copyright and float it to the left
 */
-
+#copywright {
+  float: left;
+}
 
 /*
  target the element with the id of social-links
@@ -230,9 +240,20 @@ target the element with the class of card that also has an id of chile
   - give a top and bottom padding of 5px
   - give a left and right padding of 15px
 */
+#social-links {
+  float: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 
 /*
  target the links inside the element with the id of social-links
   - make sure the text is white and there is no underline
 */
+#social-links {
+  color: white;
+  text-decoration: none;
+}
