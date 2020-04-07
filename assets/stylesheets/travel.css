@@ -4,9 +4,9 @@ to border-box. This will ensure that elements have padding and
 border included in the element's total width and height.
 */
 
-  * {
-    box-sizing:border-box;
-    }   /*   ???   */
+* { 
+  box-sizing:border-box; 
+  }   /*   ???   */
 /*
 Target the body element and set some common styles for the page:
  - background color to black
@@ -15,10 +15,10 @@ Target the body element and set some common styles for the page:
  - font size to 16px
 */
 body {
-  background-color: gainsboro;
+  background-color: black;
   color: white;
-  font: helvetica;
-  size: 16px;
+  font-family: helvetica;
+  font-size: 16px;
 
 }
 
@@ -46,20 +46,20 @@ style the element with the id of header-statement to have centered text
 
 
 /*
-target the elements with a class of page-row and set the following properties:
+target the elements with a class of page-row and set the following 
+    properties:
  - width to 100%
- - set the clear property to both //ensures elements that are floated cant be on the left or right of this element
+ - set the clear property to both //ensures elements that are 
+    floated cant be on the left or right of this element
  - give the element a padding of 5%
  - give the element a margin of 2% on the top and bottom
 */
 .page-row {
   width: 100%;
+  clear: both;
   padding: 5%;
   margin-top: 2%;
-  margin-bottom: 2%;
-  clear: both;
-  
-}
+  margin-bottom: 2%;}
 
 
 
@@ -78,15 +78,15 @@ target the elements with a class of card and set the following properties:
 */
 .card {
   width: 20%;
-  height: 300px;
+  height: 280px;
   margin: 2.5%;
   padding-top: 15%;
   float: left;
   background-color: white;
   text-align: center;
   color: black;
-  background-size: contain; size: 50px;/*  ???  */
-  background: no-repeat;
+  background-size: contain; /*  ???  */
+  background-repeat: no-repeat; /* ??? */
 }
 
  
@@ -102,9 +102,10 @@ target the element with the id of hero and set the following properties
 #hero {
   width: 100%;
   height: 450px;
-  background-size: cover 'scale'; /*????*/
+  background-size: cover; /*????*/
   background-repeat: no-repeat;
-  background-image: url('../images/travel_hero.jpg')
+  background-image: url('../images/travel_hero.jpg');
+  background-attachment: fixed; 
 }
 
 
@@ -167,7 +168,7 @@ target the element with the class of card that also has an id of chile
 /*
  target the nav element and float it to the right
 */
-#nav {
+nav {
   float: right;
 }
 
@@ -176,7 +177,12 @@ target the element with the class of card that also has an id of chile
   - remove all margin and padding
   - remove bullets from the unorder list
 */
+#nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 
+}
 
 /*
  target the elements with the class of nav-link
@@ -184,14 +190,25 @@ target the element with the class of card that also has an id of chile
   - top and bottom padding to 5px
   - left and right padding to 15px
 */
+.nav-link {
+display: inline;
+padding-top: 5px;
+padding-right: 15px;
+padding-left: 15px;
+padding-bottom: 5px;
 
+}
 
 /*
  target the links inside header element
   - remove the underline from the links
   - make sure the text is white
 */
+header a {
+  text-decoration: none;
+  color: white;
 
+}
 
 
 /*
@@ -201,9 +218,10 @@ target the element with the class of card that also has an id of chile
   - make the width 100%
 */
 table {
-  border: black '2px';
-  width: 100%;
+  border: 2px solid black;
+  
   border-collapse: collapse;
+  width: 100%;
 }
 
 
@@ -212,19 +230,9 @@ table {
  target the tr, td, and th elements
   - give a 2px black solid border to the table
 */
-th {
-  border-width: 2px;
-  border-color: black;
-}
-
-td {
-  border-width: 2px;
-  border-color: black;
-}
-
-tr {
-  border-width: 2px;
-  border-color: black;
+th, td, tr {
+  border: 2px solid black;
+  
 }
 /*
  target the th element 
@@ -233,7 +241,7 @@ tr {
 */
 th {
   background-color: black;
-  text: white
+  color: white
 
 }
 
@@ -253,7 +261,7 @@ th {
  target the h3 element within the element with the id of travel-table 
   - center align the text
 */
-h3 #travel-table {
+#travel-table h3{
   text-align: center;
 }
 
@@ -267,7 +275,7 @@ h3 #travel-table {
 
 footer {
   width: 100%;
-  height: 10px;
+  height: 100px;
   line-height: 100px;
 }
 
@@ -297,7 +305,7 @@ footer {
  target the links inside the element with the id of social-links
   - make sure the text is white and there is no underline
 */
-#social-links {
+#social-links a{
   color: white;
   text-decoration: none;
 }
